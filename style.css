@@ -272,7 +272,7 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 190px;
+        min-width: 200px;
         height: 96%;
         position: relative;
         z-index: 2;
@@ -346,7 +346,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
 @media (min-width: 600px) {
