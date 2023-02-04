@@ -83,6 +83,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    border-radius: 5px;
 }
 
 .btn:hover {
@@ -349,7 +350,7 @@ header {
     margin-top: 75px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -399,7 +400,7 @@ header {
     grid-template-columns: 600px 600px 600px; /*repeat(auto-fit, minmax(600px, 3fr));*/
     grid-template-rows: 300px 300px 300px;
     object-fit: scale-down;
-} 
+}
 
 .portfolio__item {
     background: var(--clr-accent);
@@ -421,7 +422,24 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .85;
-} 
+}
+
+/* Media query for 9 pic grid - make them stack 
+  not sure if it's .portfoio, my-work or work
+*/
+
+@media all and (max-width: 900px) {
+    .portfolio{
+        display: grid;
+        grid-gap: 3px;
+        object-fit: scale-down;
+        grid-template-columns: 1fr 100%;
+        object-fit: scale-down;
+        image-rendering: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
 
 /* Footer */
 
